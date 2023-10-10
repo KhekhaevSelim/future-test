@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { booksActions, booksThunk } from "../../BLL/book.slice";
+import { booksActions } from "../../BLL/book.slice";
 import { useAppDispatch, useAppSelector } from "../../BLL/hooks";
 import { GetBooksRequestType } from "../../DAL/types";
 import { SearchInput } from "../searchInput/SearchInput";

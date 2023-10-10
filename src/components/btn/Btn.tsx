@@ -12,7 +12,7 @@ export const Btn = (props : BtnPropsType) => {
     const dispatch = useAppDispatch();
     const books = useAppSelector(state => state.books)
   
-    const next = (searchText : string,  startIndex : number , resultCount : number,orderBy : string, categories : string ) => {
+    const next = (searchText : string , resultCount : number,orderBy : string, categories : string ) => {
         let params : GetBooksRequestType= {
             searchText ,
             startIndex : books.startIndex + 30,
@@ -28,7 +28,7 @@ export const Btn = (props : BtnPropsType) => {
         <div className={style.container}>
             {props.totalItems > 30
             ?
-            <button className={style.btn} onClick={()=>next(books.searchTitle, books.startIndex, books.resultCount, books.orderBy, books.categories)}>показать еще</button>
+            <button className={style.btn} onClick={()=>next(books.searchTitle, books.resultCount, books.orderBy, books.categories)}>показать еще</button>
             :
             ""
             }

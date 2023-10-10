@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import style from "./CurrentBook.module.css";
-import { useEffect, useLayoutEffect } from "react";
+import {  useLayoutEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../BLL/hooks";
 import { booksThunk } from "../../BLL/book.slice";
 import { Preloader } from "../../components/preloader/Preloader";
