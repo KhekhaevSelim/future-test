@@ -11,7 +11,7 @@ export const App = () => {
   return (
     <> 
       <Routes>
-      <Route path={"/Search-books-google-api"} element={<Search/>}/>
+      <Route path={"/future-test"} element={<Search/>}/>
       <Route path={"/:bookId"} element={<CurrentBook/>}/>
       </Routes>
     </>
